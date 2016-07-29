@@ -14,7 +14,7 @@ $ pip install virtualenv		# installs virtualenv
 $ python -m pip install --upgrade pip	     # upgrades pip to the latest version (if necessary)
 $ virtualenv flask		      # creates virtual environment called flask
 
-# Now, start installing flask environment modueles: 
+# Now, start installing flask environment modules: 
 $ .\flask\Scripts\pip install flask
 $ .\flask\Scripts\pip install flask-login
 $ .\flask\Scripts\pip install flask-openid
