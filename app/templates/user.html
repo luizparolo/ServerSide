@@ -1,0 +1,28 @@
+<!-- Extension of the basic layout -->
+{% extends "base.html" %}
+
+<!-- User profile -->
+{% block content %}
+
+     <div class="user">
+        
+        <table>
+            <tr valign="top">
+                <td><img src="../static/img/andre.jpeg" class="mainImage"></td>
+                <td>
+                    <h1>User: {{ user.nickname }}</h1>
+                    {% if user.about_me %}<p>{{ user.about_me }}</p>{% endif %}
+                    {% if user.last_seen %}<p><i>Last seen on: {{ user.last_seen }}</i></p>{% endif %}
+                    {% if user.id == g.user.id %}<p class="edit"><a href="{{ url_for('edit') }}">Edit</a></p>{% endif %}
+                </td>
+            </tr>
+        </table>
+        <hr>
+
+        <!-- Include posts -->
+        {% for post in posts %}
+            {% include 'post.html' %}
+        {% endfor %}
+
+     </div>
+{% endblock %}

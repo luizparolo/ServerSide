@@ -1,0 +1,23 @@
+<!-- Extension of the basic layout -->
+{% extends "base.html" %}
+
+<!-- Main page -->
+{% block content %}
+
+	<div class="messages">
+
+		<div class="topMessage">
+		    <h1>Hi, {{ user.nickname }} ! </h1>
+		    <h3>You have received some messages</h3>
+	    </div>
+	    <br>
+	    {% for post in posts %}
+	    <p><span>
+	    	<div class="sender"> {{ post.author.nickname }} </div>
+	      	</span> 
+	      	<b>{{ post.body }}</b>
+	    </p>
+	    {% endfor %}
+ 	</div>
+
+{% endblock %}

@@ -1,0 +1,10 @@
+<!-- Extension of the basic layout -->
+{% extends "base.html" %}
+
+<!-- Unforeseen error message -->
+{% block content %}
+    <h1>Oops, a bad surprise has happened ...</h1>
+    <p> We will be checking this right away !<p>
+	<p> So sorry about that.</p>
+    <p><a href="{{ url_for('index') }}">Back</a></p>
+{% endblock %}
