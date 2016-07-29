@@ -7,7 +7,9 @@ To install it, just follow the steps:
 On your Windows PowerShell:
 
 $ python-3.5.2			        # install Python on Windows
+
 $ md blog			              # creates directory blog
+
 $ cd blog			              # jump into directory blog
 
 $ python -m venv flask  		# installs flask
