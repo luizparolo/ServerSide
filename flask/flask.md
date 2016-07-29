@@ -1,10 +1,10 @@
-Flask for Windows installation.
+# Flask for Windows installation.
 
 I'm not upload it, because it has 70MB aproximately and you mandatorily need to install in your Windows computer.
 
 To install it, just follow the steps:
 
-On your Windows PowerShell:
+# On your Windows PowerShell:
 
 $ python-3.5.2			        # install Python on Windows
 
