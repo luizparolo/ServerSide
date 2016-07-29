@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+
+/*
+Colors:
+   grain: #D7CEC7;
+   blackboard: #565656;
+   Ox: #76323F;
+   Tan: #0C9F80;
+   rust: #B56357;
+*/
+
+
+
+html { margin: 0 auto;  padding: 0; max-width: 1200px; font-family: 'Lato', sans-serif; }
+body { margin: 0;  padding: 0; height: 70vh; }
+
+/*  -- Header and Footer -- */
+header, footer
+{
+    text-align: center;
+    background-image: linear-gradient(90deg, #637474, #637474, #565656, #565656, #565656, #565656 40%,#565656);
+    min-height: 120px;
+    border: 1px solid #fff;
+}
+
+header img {  max-height: 80px;  border-radius: 50px;  margin-top: 2%;  margin-left: 1%;}
+img { border-radius: 50px; height: 50px;}
+img.mainImage { height: 100px; }
+
+footer { min-height: 50px; }
+footer h3 { color: white; padding-top: 5px; }
+
+header h1       { color: #788880;  font-size: 4rem; margin: 0 auto;  padding-top: 1.5%; color: #dddddd; }
+header h1 span  { color: #c46d3b; color: #B56357; }
+
+.position, .position a, .message, a, input  { 
+    font-family: 'Lato', Oswald, sans-serif, Arial, Verdana; 
+    font-size: 16px; text-decoration: none; color: white;
+    font-weight: 300; 
+}
+
+input, textarea { background-color: #637474; background-color: #565656; margin: 10px 0px 10px 0px; color: white; }
+
+.position { padding: 0 0 10px 0;  width: 400px; height: 25px; margin: 0 auto; 
+            text-align: center; border: 1px solid; padding-top: 10px; 
+            background-color: #565656;}
+
+.position a { padding: 5px;}
+.position a span { padding: 10px; }
+
+
+/*  -- Sign In -- */
+.signin, .messages, article, .user { padding-top: 20px;}
+.signin { width: 350px; margin: 20px auto; text-align: center; border: 1px solid white;}
+input#openid { width: 250px;}
+
+
+
+.signin p, .signin a { font-family: 'Roboto Condensed', sans-serif, Arial, Verdana; color: white; padding: 10px;}
+.signin h1 { padding-bottom: 20px;}
+nav ul, li { list-style-type: none; }
+
+/*  -- User & Posts -- */
+.user h1 { font-size: 2.5rem; padding-bottom: 10px}
+.edit { background-color: #565656; width: 40px; padding: 5px; text-align: center; margin-top: 10px;}
+.post { padding-top: 10px;}
+.postMain {padding-top: 25px;}
+
+/*  -- Fonts -- */
+h1, h2, h3 {  font-family: 'lato', sans-serif, Arial, Verdana; }
+
+h1 { font-size: 3rem; margin: 0;}
+h2 { font-size: 2rem; margin: 0;}
+h3 { font-size: 1.5rem; margin: 0;}
+p  { margin: 0; font-family: 'Roboto Condensed', sans-serif;}
+
+
+/*  -- Messages -- */
+li.message { margin: 0 auto; width: 280px; }
+.messages p  { line-height: 3rem; font-size: 20px;}
+.messages p span { font-style: italic; padding-right: 10px; }
+.messages h1 { padding-bottom: 20px; font-size: 2.5rem;}
+.topMessage { border-bottom: 1px solid white; width: 60%; padding-bottom: 10px;}
+.sender {width: 100px; text-align: center; background: #565656;}
+
+/*  -- Article -- */
+article { padding: 20px; color: #fff; background-color: #B56357; min-height: 70vh;}
+
+/*  -- Profile -- */
+.editProfile { padding: 30px 10px 10px 10px; width: 330px; margin: 40px auto;  border: 1px solid white; }
+.editProfile h1 { font-size: 2.5rem; padding-bottom: 10px; padding-left: 15px;  border-bottom: 1px solid white;}
+.editProfile form  { padding-top: 10px;}
+
+/*  -- Clearfix  -- */ 
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.floatright {
+  float: right;
+  margin-left: 0px;
+}
+.floatleft {
+  float: left;
+  margin-right: 0px;
+}
+
+
+/* -- MyGrid = Your gridded elements must have margin-left and margin-right values of 1.5%.-- */
+
+.g8, .g16, .g25, .g33, .g41, .g50, .g58, .g66, .g75, .g100 {
+  float: left;
+  margin-left: 1.5%;
+  margin-right: 1.5%; 
+  display:inline;
+  box-sizing: border-box; 
+}
+
+.g8  { width: 8.33%; }
+.g16 { width: 13.66%; height: 500%; }
+.g25 { width: 22%; }
+.g33 { width: 30.33%; }
+.g41 { width: 39.65%; }
+.g50 { width: 47%; }
+.g58 { width: 55.33%; }
+.g66 { width: 63.66%; }
+.g75 { width: 72%; }
+.g100{ width: 97%; }
