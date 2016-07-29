@@ -1,6 +1,6 @@
 Flask for Windows installation.
 
-I'm not upload it, because it has 70MB aproximately and you mandaorily need to install in your Windows computer.
+I'm not upload it, because it has 70MB aproximately and you mandatorily need to install in your Windows computer.
 
 To install it, just follow the steps:
 
