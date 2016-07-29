@@ -1,13 +1,15 @@
 Flask for Windows installation.
 
-I'm not upload it, because it has 70MB aproximately.
+I'm not upload it, because it has 70MB aproximately and you mandaorily need to install in your Windows computer.
 
 To install it, just follow the steps:
 
 On your Windows PowerShell:
 
 $ python-3.5.2			        # install Python on Windows
+
 $ md blog			              # creates directory blog
+
 $ cd blog			              # jump into directory blog
 $ python -m venv flask  		# installs flask
 $ pip install virtualenv		# installs virtualenv
